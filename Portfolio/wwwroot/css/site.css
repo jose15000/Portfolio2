@@ -32,9 +32,6 @@ body {
     margin: 0px;
 }
 
-
-
-
 .intro-text {
     font-family: 'ArcadeClassic', sans-serif;
     color: white;
@@ -103,16 +100,21 @@ body {
 }
 
 
-.experiencia
-{
-   
+.project-text {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 15px
 }
 
 .projects
 {
 
     width:100%;
+    background-color:black;
+    justify-content:center;
+    align-items:center;
     font-family:"ArcadeClassic",sans-serif;
-    position:relative; top:100%;
-
+    position:absolute; top:100%;
+    left:0px;
 }
