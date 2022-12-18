@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Main\Index.cshtml" />
+    <Content Remove="Views\Main\View.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\TodoApp-Google-Chrome-2022-12-01-18-06-17.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Main\Index.cshtml" />
+    <Resource Include="Views\Main\View.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\imagens\TodoApp-Google-Chrome-2022-12-01-18-06-17.gif" />
+  </ItemGroup>
+
+</Project>

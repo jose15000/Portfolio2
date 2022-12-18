@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Portfolio</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+ <link href="/css/all.min.css"  rel="stylesheet"/>
+ <link href="/css/min.css"  rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="/css/mdb.min.css" />
+</head>
+<body>
+	<head>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<header>
+		<nav class="navbar navbar-expand-lg  navbar-toggleable-sm text-light navbar-fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand text-light " asp-area="" asp-controller="Home" asp-action="Index">Portfolio </a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+					<ul class="navbar-nav flex-grow-1">
+						<li class="nav-item text-light">
+							<a class="nav-link text-light" href="#home">Home</a>
+						</li>
+							 <li class="nav-item text-light">
+							<a class="nav-link text-light" href="#about">About</a>
+						</li>
+						<li class="nav-item dropdown ">
+						<a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							  Language
+						</a>
+						 <ul class="dropdown-menu ">
+
+							<li><a class="dropdown-item text-black" asp-area="" asp-controller="Home" asp-action="Index" > <i class="flag flag-united-states"></i> English</a></li>
+							<li><a class="dropdown-item text-black" asp-area="" asp-controller="Home" asp-action="Indexpt" ><i class="flag flag-brazil"></i>Português</a></li>
+							</ul>
+							</li>
+							 </ul>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+	<script>
+		
+	</script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/all.min.js"></script>
+     <script src="~/js/fontawesome.js"></script>
+
+     <script src="~/lib/jquery/dist/jquery.min.js">$(document).ready(function(){
+    $(".dropdown").hover(function(){
+        var dropdownMenu = $(this).children(".dropdown-menu");
+        if(dropdownMenu.is(":visible")){
+            dropdownMenu.parent().toggleClass("open");
+        }
+    });
+});     </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,118 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+nav, .img-fluid {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    position:absolute;
+}
+
+.nav-link, .navbar-brand
+{
+    font-family: "ArcadeClassic", sans-serif;
+}
+
+body {
+    background-image:url("/imagens/2513478.jpg");
+    width:100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    margin: 0px;
+}
+
+
+
+
+.intro-text {
+    font-family: 'ArcadeClassic', sans-serif;
+    color: white;
+    padding: 150px 0 0 130px;
+}
+
+.top-text
+{
+    font-size:2rem;
+}
+.nome {
+    
+    color: #e36612;
+}
+
+.texto-digitado:after {
+    content: "|";
+    margin-left: 5px;
+    width: 24ch;
+    animation: blink 0.7s steps(24) infinite normal;
+    overflow: hidden;
+}
+
+
+@keyframes blink
+{
+    0% {opacity: 1}
+    100%{opacity: 0}
+}
+
+.about-container {
+    font-family: "ArcadeClassic",sans-serif;
+    background-image:url("/imagens/woodenbackground.png");
+    background-repeat:no-repeat;
+    background-size: contain;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width:1119px;
+    max-height:500px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 300px;
+    left: 0px;
+    margin-left: auto;
+}
+
+.about-text
+{
+    margin-top:40px;
+    margin-left:50px;
+    font-size:15px;
+}
+
+.pixel-art {
+    position:absolute;
+    max-width: 200px;
+    max-height: 250px;
+    margin-left:600px;
+    margin-top:-270px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.experiencia
+{
+   
+}
+
+.projects
+{
+
+    width:100%;
+    font-family:"ArcadeClassic",sans-serif;
+    position:relative; top:100%;
+
+}
