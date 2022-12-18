@@ -66,7 +66,7 @@ body {
     font-family: "ArcadeClassic",sans-serif;
     background-image:url("/imagens/woodenbackground.png");
     background-repeat:no-repeat;
-    background-size: contain;
+    
     position: relative;
     height: 100%;
     width: 100%;
@@ -89,32 +89,18 @@ body {
 
 .pixel-art {
     position:absolute;
-    max-width: 200px;
-    max-height: 250px;
-    margin-left:600px;
-    margin-top:-270px;
+    max-width: 300px;
+    max-height: 350px;
+    margin-left:640px;
+    margin-top:-300px;
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-
-.project-text {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size: 15px
-}
-
-.projects
+.projects-container
 {
-
-    width:100%;
     background-color:black;
-    justify-content:center;
-    align-items:center;
-    font-family:"ArcadeClassic",sans-serif;
-    position:absolute; top:100%;
-    left:0px;
 }
+
