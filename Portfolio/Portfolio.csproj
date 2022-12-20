@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Images\TodoApp-Google-Chrome-2022-12-01-18-06-17.gif" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
   </ItemGroup>
 
@@ -25,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\imagens\pexels-drift-shutterbug-2085998.jpg" />
     <None Include="wwwroot\imagens\TodoApp-Google-Chrome-2022-12-01-18-06-17.gif" />
   </ItemGroup>
 
