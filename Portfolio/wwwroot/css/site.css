@@ -19,7 +19,7 @@ nav, .img-fluid {
     position:absolute;
 }
 
-.nav-link, .navbar-brand
+.nav-link, .navbar-brand 
 {
     font-family: "Roboto",sans-serif;
 }
@@ -82,7 +82,7 @@ body {
     max-width:1119px;
     max-height:500px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-top: 100px;
     margin-bottom:150px;
@@ -91,9 +91,17 @@ body {
 .about-text
 {
   
-    font-size:20px;
+    font-size:18px;
 }
 
+.skills
+{
+    position:relative;
+    display:flow;
+    align-items:center;
+    justify-content:right;
+    margin-left:100px;
+}
 
 .projects-title
 {
